@@ -1,5 +1,5 @@
 import React, { FormEvent } from "react";
-import { QuizData, QuizAnswers } from "./types";
+import { QuizData, QuizAnswers } from "../../types";
 import Question from "./Question";
 interface Props {
   data: QuizData;

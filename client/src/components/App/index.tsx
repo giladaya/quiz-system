@@ -1,32 +1,31 @@
 import React from "react";
 import "./App.css";
-import Quiz from "../Quiz";
-import { QuizData, QuizAnswers } from "../Quiz/types";
-import * as Api from "../../services/dataApi";
+import Quiz from "../../pages/Quiz";
+import Leaderboard from "../../pages/Leaderboard";
+import Admin from "../../pages/Admin";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
-  const handleSubmit = React.useCallback((answers: QuizAnswers) => {
-    console.log({ answers });
-  }, []);
-
-  const [data, setData] = React.useState<QuizData>();
-
-  React.useEffect(() => {
-    Api.fetchQuestions().then(data => {
-      setData(data);
-    });
-  }, [setData]);
-
-  if (!data) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div className="App">
-      <header className="App-header">Da Quizzzzz</header>
-      <main className="App-main">
-        <Quiz data={data} onSubmit={handleSubmit} />
-      </main>
+      <Router>
+        <header className="App-header">
+          <Link to="/">Da Quizzzzz</Link>
+        </header>
+        <main className="App-main">
+          <Switch>
+            <Route exact path="/">
+              <Quiz />
+            </Route>
+            <Route path="/leaderboard">
+              <Leaderboard />
+            </Route>
+            <Route path="/admin">
+              <Admin />
+            </Route>
+          </Switch>
+        </main>
+      </Router>
     </div>
   );
 }
