@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "How are you?",
+      "answers": ["Good", "OK", "So-so", "Bad"]
+    },
+    {
+      "question": "How do you do?",
+      "answers": ["Good", "OK", "So-so", "Bad"]
+    },
+    {
+      "question": "Who are you?",
+      "answers": ["Mr Pink", "Mr Red", "Mr Orange", "Mr Yellow"]
+    },
+    {
+      "question": "What is the answer?",
+      "answers": ["1", "2", "3", "42"]
+    },
+    {
+      "question": "Why not?",
+      "answers": ["Foo", "Bar", "Baz", "Bab"]
+    },
+    {
+      "question": "Where are you?",
+      "answers": ["Here", "There", "Everywhere", "Don't know"]
+    },
+    {
+      "question": "How much is 1+2",
+      "answers": ["1", "2", "3", "4"]
+    },
+    {
+      "question": "Who is your favorite superhero?",
+      "answers": ["Superman", "Batman", "Spiderman", "Powder Toast Man"]
+    },
+    {
+      "question": "What time is it?",
+      "answers": ["1:00", "9:34pm", "11:42am", "Time to dance"]
+    },
+    {
+      "question": "What is your favorite color?",
+      "answers": ["Pink", "Red", "Orange", "Yellow"]
+    }
+  ]
+}

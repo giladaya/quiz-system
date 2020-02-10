@@ -1,0 +1,13 @@
+{
+  "name": "fullstack-rolling-project",
+  "version": "1.0.0",
+  "description": "Solution to the fullstack course rolling project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client; yarn build",
+    "start": "DEBUG=server:* node ./server/bin/www"
+  },
+  "author": "",
+  "license": "ISC"
+}
