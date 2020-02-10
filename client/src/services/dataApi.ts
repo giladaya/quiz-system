@@ -7,11 +7,6 @@ export function fetchQuestions() {
     .then(questions => ({ questions }));
 }
 
-export function fetchLeaderboard() {
-  const url = `${BASE_URL}/leaderboard`;
-  return fetch(url).then(data => data.json());
-}
-
 export function submitAnswers(data: number[]) {
   const url = `${BASE_URL}/quiz`;
   return fetch(url, {

@@ -11,7 +11,3 @@ export interface QuizResults {
   tempName: string | null;
   isTop: boolean;
 }
-export interface LeaderboardEntry {
-  score: number;
-  name: string;
-}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Quiz from "../../pages/Quiz";
-import Leaderboard from "../../pages/Leaderboard";
 import Admin from "../../pages/Admin";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -16,9 +15,6 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Quiz />
-            </Route>
-            <Route path="/leaderboard">
-              <Leaderboard />
             </Route>
             <Route path="/admin">
               <Admin />

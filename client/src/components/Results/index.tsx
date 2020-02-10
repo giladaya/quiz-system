@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Form from "./Form";
 import { QuizResults } from "../../types";
 
@@ -14,7 +13,6 @@ export default function Results(props: Props) {
       Your score is {data.score}
       <br />
       {data.isTop ? <Form onSubmit={onNameSubmit} /> : ""}
-      <Link to="/leaderboard">Go to Leaderboard</Link>
     </div>
   );
 }
