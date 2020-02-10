@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors')
 
+var authRouter = require('./routes/auth');
 var questionsRouter = require('./routes/questions');
 var quizRouter = require('./routes/quiz');
 var leaderboardRouter = require('./routes/leaderboard');
@@ -19,6 +20,7 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cors())
 
+app.use('/api/auth', authRouter);
 app.use('/api/questions', questionsRouter);
 app.use('/api/quiz', quizRouter);
 app.use('/api/leaderboard', leaderboardRouter);
